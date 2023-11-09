@@ -30,5 +30,3 @@ print(f"The area of a circle with a radius of that length is {length ** 2 * 2 *m
 #then a SPHERE
 print(f"The volume of a sphere with a radius of that length is {length ** 2 * 4 *math.pi:.3f} cm squared, or {length_m ** 2 * 4 * math.pi:.3f} m sqared.")
 
-#then an equilateral triangle pyramid
-print(f"The volume of an equilateral triangle pyramid with a length that size is {(length ** 3) / (6 * math.sqrt(2)):.3f} cm cubed.")
