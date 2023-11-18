@@ -1,3 +1,5 @@
+#Extras: Most endings loop back through the beginning, except for two hidden endings. There's a function that makes choice making consistent. And I imported time and made a function for a typewriter effect, instead of the instantaneous appearance.
+
 import time
 
 #typewriter effect?
@@ -18,7 +20,7 @@ def printt(*args):
 
 
 def start_story():
-    printt("You blink, and suddenly you're somewhere else. It's cold, you can see your breath.")
+    printt("You blink, and suddenly you're somewhere else. You don't remember how you got here. \nIt's cold, you can see your breath.")
     printt("It's dark and cloudy, no moon or stars in sight. Clouds above, and a fog rolling in, enveloping you.")
     printt("Confused, but with no other options, you walk forward. Up ahead, some distance away, you see the entrance to a hedge maze. ")
     printt("As you enter the maze, you see a path to your LEFT, to your RIGHT, and STRAIGHT ahead.")
@@ -41,7 +43,7 @@ def make_choice(choices):
 
 def main():
     start_story()
-    choices_1 = ["LEFT", "RIGHT", "STRAIGHT", "WAKE UP"]
+    choices_1 = ["LEFT", "RIGHT", "WAKE UP"]
     user_choice_1 = make_choice(choices_1).upper()
 
     
@@ -147,7 +149,7 @@ def main():
             printt("They're all little, right?")
 
             #goblin choices
-            choices_3 = ["SNEAK", "DISTRACT", "INTIMIDATE", "WAKE UP"]
+            choices_3 = [ "DISTRACT", "INTIMIDATE", "WAKE UP"]
             user_choice_3 = make_choice(choices_3).upper()
 
             if user_choice_3 == "DISTRACT":
@@ -167,11 +169,7 @@ def main():
                 printt("#")
                 main()
 
-            elif user_choice_3 == "SNEAK":
-                printt("#")
-                main()
-        
-
+            
         elif user_choice_2 == "STAND YOUR GROUND":
             printt("#")
 
@@ -194,66 +192,7 @@ def main():
     elif user_choice_1 == 'STRAIGHT':
         printt("#")
 
-        #frogger
-        choices_2 = ["LOG", "ROAD", "GO BACK", "WAKE UP"]
-        user_choice_2 = make_choice(choices_2).upper()
-
-        if user_choice_2 == "LOG":
-            printt("#")
-           
-           #MARIO     
-            choices_3 = ["FIRE FLOWER", "YOSHI", "MUSHROOM", "WAKE UP"]
-            user_choice_3 = make_choice(choices_3).upper()
-
-            if user_choice_3 == "FIRE FLOWER":
-                printt("#")
-                main()
-
-            elif user_choice_3 == "YOSHI":
-                printt("#")
-                main()
-            
-            elif user_choice_3 == "MUSHROOM":
-                printt("#")
-                main()
         
-        elif user_choice_2 == "ROAD":
-            printt("#")
-
-            #sonic
-            choices_3 = ["RUN AROUND", "JUMP ATTACK", "SNARKY COMMENT", "WAKE UP"]
-            user_choice_3 == make_choice(choices_3).upper()
-
-            if user_choice_3 == "RUN AROUND":
-                printt("#")
-                main()
-
-            elif user_choice_3 == "JUMP ATTACK":
-                printt("#")
-                main()
-
-            elif user_choice_3 == "SNARKY COMMENT":
-                printt("#")
-                main()
-            
-        elif user_choice_2 == "GO BACK":
-            printt("#")
-
-            #matrix
-            choices_3 = ["KUNG FU", "FLY AWAY", "JOIN HIM", "WAKE UP"]
-            user_choice_3 == make_choice(choices_3).upper()
-            
-            if user_choice_3 == "KUNG FU":
-                printt("#")
-                main()
-
-            elif user_choice_3 == "FLY AWAY":
-                printt("#")
-                main()
-            
-            elif user_choice_3 == "JOIN HIM":
-                printt("#")
-                main()
             
     
 
@@ -262,7 +201,7 @@ def main():
         printt("but there's no other fork, no other path presenting itself. For what seems like hours, you do nothing")
         printt("but follow the path. Just you, the endless hedges, and the fog. It gives you time to think. Where")
         printt("are you, and how did you get here? What's on the other side. You were musing the possibilities,")
-        printt("when you finally come to a fork. Once again, three choices: left, right, straight. You're doing")
+        printt("when you finally come to a fork. This time, three choices: left, right, straight. You're doing")
         printt("'eeney meeney miney mo' in your head to choose a path when you hear 'Lookey here, another one!'")
         printt("You look around, but you see no-one. 'Up here, landling!' You look up, but all you see is a pitch")
         printt("black raven, almost invisible in the darkness and fog. 'Yes, me. The bird' states the raven.")
@@ -334,11 +273,47 @@ def main():
                 main()
 
             elif user_choice_3 == "ATTACK":
-                printt("#")
+                printt("Somehow, you know that none of those goblets are safe. None of this has been fair.")
+                printt("You can see it in his ugly smug face; he's never letting you go. You pretend to examine the")
+                printt("enormous cups, but take the time to examine your surroundings. You see strange wooden statues,")
+                printt("in agonizing positions, and you realize that it's people, transformed into wood. You see")
+                printt("burn marks across the table. Further down, you see withered what appears to be holes in the ")
+                printt("enormous table, as if melted by acid. There's no way you're drinking from any of the cups.")
+                printt("Anger starts boiling within you. But what to do? You look around nothing really obvious to arm yourself.")
+                printt("But maybe... maybe you can beat him at his own game. Nearby, you see a helmut from a suit of armor.")
+                printt("The beginnings of an idea are forming. You go to inspect the helmut, as if you want to distract yourself")
+                printt("from this terrible situation. 'Time enough, now you CHOOSE' bellowed the giant, face contorting with impatience.")
+                printt("You take the helmut with you, as if without thought. You go to the brass goblet, you inspect as if about")
+                printt("to drink, then walk off, 'absent-mindedly' dunking the helmut in the dark liquid. You head towards the wooden")
+                printt("wooden mug, and do the same thing. When the dark liquid meets the clear liquid, they turn a disconcerting yellow.")
+                printt("You move faster, as the giant is clearly becoming agitated with your antics. 'DRINK!' he roars. You head")
+                printt("the final cup, the jeweled chalice. Moving quickly, you abandon the ruse, and simply scoop up as much")
+                printt("of the blue liquid as you can. The mixture is smoking and giving off an acrid smell and smoking. The giant")
+                printt("is enraged with the turn of events, and screams in frustration. You're very worried, that's a big giant")
+                printt("for not a lot of liquid, but there's no way you're drinking it. He's reaching towards you now, and you")
+                printt("throw the liquid, helmut and all at the outstretched hand, and the results were surprising. As soon as ")
+                printt("the liquid contacts the hand, it starts turning to crumbling stone. The giant howls in pain, looking")
+                printt("at where a hand used to be. He grips the stump, and you notice he leans against the table, right")
+                printt("next to the brass goblet. While he's distracted, you run to the goblet and heave. trying to be fast")
+                printt("but also terrified to get a single drop on you. You HEAVE, and manage to tip the goblet, and the black")
+                printt("liquid spills over the giants arm, frost immediately spreading, and fixing him in place. His arm flails,")
+                printt("and knocks over the wooden goblet, luckily AWAY from you. He's ignoring you now in his panic, and you")
+                printt("run to the final goblet and HEAVE again, now with a confidence that maybe you can survive this.")
+                printt("The sparkling liquid flows down the table and onto the giant, and he bursts into flames.")
+                printt("It looks so painful, you almost feel sorry for him, until you remember that this is what he")
+                printt("planned for you. You don't think he's going to recover, but you don't wait around. You climb your way")
+                printt("down the table, and you look in the direction the giant came from. It's time to find your way home.")
+                printt("But maybe, we'll see if there's a giant's hoard of gold to pick through while we're looking.")
 
         
         elif user_choice_2 == "EGG":
-            printt("#")
+            printt("'Very astute' says the raven, then makes a sound between a laugh and a caw. Very well,")
+            printt("a deal is a deal.' The raven thinks for a moment, as if making a decision. 'The way you want to go, ")
+            printt("is straight ahead.' That's the way you were going to pick anyways, excellent! 'Have fun' the raven")
+            printt("cries, then flaps away without another word. You go straight ahead. As you walk, you think.")
+            printt("Eggs. I crack them. I make them. Wait, how do you tell an egg? Can you play an egg... Suddenly you ")
+            printt("about the raven's sincerity, which makes you feel a little crazy for having a conversation with an insincere")
+            printt("bird. ")
 
             #trap room
             choices_3 = ["HEDGE MAZE", "FLOATING PLATFORMS", "STATUES", "WAKE UP"]
@@ -359,7 +334,7 @@ def main():
             printt("#")
 
             #forbidden fruit
-            choices_3 = ["PARTAKE", "FLEE", "FLATTER", "WAKE UP"]
+            choices_3 = ["PARTAKE", "FLEE", "WAKE UP"]
             user_choice_3 == make_choice(choices_3).upper()
 
             if user_choice_3 == "PARTAKE":
@@ -370,9 +345,6 @@ def main():
                 printt("#")
                 main()
 
-            elif user_choice_3 == "FLATTER":
-                printt("#")
-                main()
 
 
     elif user_choice_1 or user_choice_2 or user_choice_3 == "WAKE UP":
