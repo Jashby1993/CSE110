@@ -27,7 +27,7 @@ def make_choice(choices):
     while True:
         printt("What do you choose?  ")
         for choice in choices:
-            if choice == "AWAKE":
+            if choice == "AWAKE" or "ATTACK":
                 printt(f"- ")
             else:
                 printt(f"- {choice}")
@@ -41,9 +41,12 @@ def make_choice(choices):
 
 def main():
     start_story()
-    choices_1 = ["LEFT", "RIGHT", "STRAIGHT", "AWAKE"]
+    choices_1 = ["LEFT", "RIGHT", "STRAIGHT", "WAKE UP"]
     user_choice_1 = make_choice(choices_1).upper()
 
+    
+    #if user_choice_1 == "AWAKE":
+        #printt("Suddenly, the world stops and fades to tones of grey. Just as suddenly, there's a hooded figure before you")
     if user_choice_1 == "LEFT":
         #narrative
         printt("You chose to go LEFT.")
@@ -55,7 +58,7 @@ def main():
         printt("Do you GRAB GUN, STAND YOUR GROUND, or RUN AWAY?")
             
         #first bear choice
-        choices_2 = ["GRAB GUN", "STAND YOUR GROUND", "RUN AWAY", "AWAKE"]
+        choices_2 = ["GRAB GUN", "STAND YOUR GROUND", "RUN AWAY", "WAKE UP"]
         user_choice_2 = make_choice(choices_2).upper()
 
         if user_choice_2 == "GRAB GUN":
@@ -75,7 +78,7 @@ def main():
             printt("On your other side, you see a few scattered GOLD COINS amid the underbrush. Or maybe... do you just TALK to him?")
 
             #third choice
-            choices_3 = ["SWORD", "GOLD COINS", "TALK", "AWAKE"]
+            choices_3 = ["SWORD", "GOLD COINS", "TALK", "WAKE UP"]
             user_choice_3 = make_choice(choices_3).upper()
 
             #first troll choice
@@ -144,7 +147,7 @@ def main():
             printt("They're all little, right?")
 
             #goblin choices
-            choices_3 = ["SNEAK", "DISTRACT", "INTIMIDATE", "AWAKE"]
+            choices_3 = ["SNEAK", "DISTRACT", "INTIMIDATE", "WAKE UP"]
             user_choice_3 = make_choice(choices_3).upper()
 
             if user_choice_3 == "DISTRACT":
@@ -159,9 +162,185 @@ def main():
                 printt("You're just about to the path, when you look up. Up in the trees, watching you with gloating, greedy, menacing grins, are\nmore goblins, who were NOT caught up in your distraction.")
                 printt("Panicking, you get ready to run. You see one behind you heft a small spear. You sprint, despite the pain, but you feel\na sharp stabbing pain in your back between your ribs and then")
                 main()
+            
+            elif user_choice_3 == "INTIMIDATE":
+                printt("#")
+                main()
 
-            elif user_choice_3 == 
+            elif user_choice_3 == "SNEAK":
+                printt("#")
+                main()
+        
 
+        elif user_choice_2 == "STAND YOUR GROUND":
+            printt("#")
+
+            #dragon choices
+            choices_3 = ["HIDE", "STAFF", "SHEILD", "WAKE UP"]
+            user_choice_3 = make_choice(choices_3).upper()
+
+            if user_choice_3 =="HIDE":
+                printt("#")
+                main()
+
+            elif user_choice_3 == "STAFF":
+                printt("#")
+                main()
+
+            elif user_choice_3 == "SHEILD":
+                printt("#")
+                main()
+            
+    elif user_choice_1 == 'STRAIGHT':
+        printt("#")
+
+        #frogger
+        choices_2 = ["LOG", "ROAD", "GO BACK", "WAKE UP"]
+        user_choice_2 = make_choice(choices_2).upper()
+
+        if user_choice_2 == "LOG":
+            printt("#")
+           
+           #MARIO     
+            choices_3 = ["FIRE FLOWER", "YOSHI", "MUSHROOM", "WAKE UP"]
+            user_choice_3 = make_choice(choices_3).upper()
+
+            if user_choice_3 == "FIRE FLOWER":
+                printt("#")
+                main()
+
+            elif user_choice_3 == "YOSHI":
+                printt("#")
+                main()
+            
+            elif user_choice_3 == "MUSHROOM":
+                printt("#")
+                main()
+        
+        elif user_choice_2 == "ROAD":
+            printt("#")
+
+            #sonic
+            choices_3 = ["RUN AROUND", "JUMP ATTACK", "SNARKY COMMENT", "WAKE UP"]
+            user_choice_3 == make_choice(choices_3).upper()
+
+            if user_choice_3 == "RUN AROUND":
+                printt("#")
+                main()
+
+            elif user_choice_3 == "JUMP ATTACK":
+                printt("#")
+                main()
+
+            elif user_choice_3 == "SNARKY COMMENT":
+                printt("#")
+                main()
+            
+        elif user_choice_2 == "GO BACK":
+            printt("#")
+
+            #matrix
+            choices_3 = ["KUNG FU", "FLY AWAY", "JOIN HIM", "WAKE UP"]
+            user_choice_3 == make_choice(choices_3).upper()
+            
+            if user_choice_3 == "KUNG FU":
+                printt("#")
+                main()
+
+            elif user_choice_3 == "FLY AWAY":
+                printt("#")
+                main()
+            
+            elif user_choice_3 == "JOIN HIM":
+                printt("#")
+                main()
+            
+    
+
+    elif user_choice_1 == "RIGHT":
+        printt("#")
+
+        #Sphinx's riddle
+        choices_2 = ["WHISPER", "ECHO", "SHADOW", "WAKE UP"]
+        user_choice_2 = make_choice(choices_2).upper()
+
+        if user_choice_2 == "ECHO":
+            printt("#")
+
+            #Giants drink
+            choices_3 = ["BRASS GOBLET", "JEWELED CHALICE", "WOODEN MUG", "WAKE UP", "ATTACK"]
+            user_choice_3 == make_choice(choices_3).upper()
+
+            if user_choice_3 == "BRASS GOBLET":
+                printt("#")
+                main()
+
+            elif user_choice_3 == "JEWELED CHALICE":
+                printt("#")
+                main()
+            
+            elif user_choice_3 == "WOODEN MUG":
+                printt("#")
+                main()
+
+            elif user_choice_3 == "ATTACK":
+                printt("#")
+
+        
+        elif user_choice_2 == "WHISPER":
+            printt("#")
+
+            #trap room
+            choices_3 = ["HEDGE MAZE", "FLOATING PLATFORMS", "STATUES", "WAKE UP"]
+            user_choice_3 == make_choice(choices_3).upper()
+
+            if user_choice_3 == "HEDGE MAZE":
+                main()
+
+            elif user_choice_3 == "FLOATING PLATFORMS":
+                printt("#")
+                main()
+
+            elif user_choice_3 == "STATUES":
+                printt("#")
+                main()
+
+        elif user_choice_2 == "SHADOW":
+            printt("#")
+
+            #forbidden fruit
+            choices_3 = ["PARTAKE", "FLEE", "FLATTER", "WAKE UP"]
+            user_choice_3 == make_choice(choices_3).upper()
+
+            if user_choice_3 == "PARTAKE":
+                printt("#")
+                main()
+            
+            elif user_choice_3 == "FLEE":
+                printt("#")
+                main()
+
+            elif user_choice_3 == "FLATTER":
+                printt("#")
+                main()
+
+
+    elif user_choice_1 or user_choice_2 or user_choice_3 == "WAKE UP":
+        printt("Suddenly, the world stops and fades to tones of grey. Just as suddenly, there's a hooded figure before you.")
+        printt('"Have you tired of our little game, have you?" he says in a deep, booming voice. Suddenly, this all seems familiar.')
+        printt("'I've done this before. I've had this conversation before,' you think. How long have I been here? \nHow many times have I been through this?")
+        printt('"I asked you a question," comes the booming voice again. "Are you done with our game?"')
+        wake_up = input('"Do you want to wake up?," the voice continues."A simple YES or NO will suffice." ').upper()
+        if wake_up == "NO":
+            printt('"Delightful!" says the mysterious figure. "I was not quite finsihed toying with you."')
+            printt("The world starts to spin, the colors returning, and becoming brighter, until everything seems\nbrighter than could possibly exist. Your head starts pounding and then")
+            main()
+        elif wake_up == "YES":
+            printt("In the next moment, you open your eyes to find yourself lying in your bed. The soft glow of morning \nlight filters through your window, and the distant chirping of birds signals the \nbeginning of a new day. Sweat beads on your forehead as the remnants of the \ndream linger in your mind.")
+            printt("The enchanted realm, the maze, the dragons, and the goblins—all of it was just a vivid dream. Yet, the \nemotions and memories are so vivid that for a moment, you question \nwhich reality is the true one.")
+            printt('As you sit up and collect your thoughts, you realize that the choice to "WAKE UP" was an escape,\n a reset to the comfort of the familiar. The adventure may have been a dream, \nbut the lingering sense of wonder and excitement remains.')
+            printt("As you ponder the dream and the choice you made, you can't help but wonder if the enchanted realm \nis still there, waiting for you to explore it again. The decision is yours—will \nyou dismiss it as a mere dream, or will you embrace the mystery and embark on a new journey?")
+            printt("The room is quiet, and the possibilities are endless. Welcome back to reality. What will you do?")
 
 #playing the game
 main()

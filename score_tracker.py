@@ -1,6 +1,6 @@
 #Name of the game
-game=input("Please enter the name of the game we are playing!  ").capitalize()
-winning_rule=input("Who wins this game< highest points or lowest points?\nPlease enter either 'highest' or lowest' ")
+game=input("Please enter the name of the game we are playing!  ").title()
+winning_rule=input("Who wins this game: highest points or lowest points?\nPlease enter either 'highest' or lowest' ")
 
 #Number of rounds
 rounds_quantity=int(input(f"How many rounds does {game} have? "))
