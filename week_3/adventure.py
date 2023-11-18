@@ -258,36 +258,86 @@ def main():
     
 
     elif user_choice_1 == "RIGHT":
-        printt("#")
-
-        #Sphinx's riddle
-        choices_2 = ["WHISPER", "ECHO", "SHADOW", "WAKE UP"]
+        printt("No option seems better than another, so you stride towards the right. The path is twisting, convoluted,")
+        printt("but there's no other fork, no other path presenting itself. For what seems like hours, you do nothing")
+        printt("but follow the path. Just you, the endless hedges, and the fog. It gives you time to think. Where")
+        printt("are you, and how did you get here? What's on the other side. You were musing the possibilities,")
+        printt("when you finally come to a fork. Once again, three choices: left, right, straight. You're doing")
+        printt("'eeney meeney miney mo' in your head to choose a path when you hear 'Lookey here, another one!'")
+        printt("You look around, but you see no-one. 'Up here, landling!' You look up, but all you see is a pitch")
+        printt("black raven, almost invisible in the darkness and fog. 'Yes, me. The bird' states the raven.")
+        printt("'I've been watching you for some time now. Would you like to know the way out?' You nod eagerly.")
+        printt("'Answer right my riddle, and I'll point you the way out of here. A wrong answer will get you a ")
+        printt("wrong answer. Agreed?")
+        printt("You've always been good at riddles, so you agree eagerly.")
+        printt("Very well, I love a good sport. Your riddle is this: I can be cracked, made, told, and played. What am I?")
+        printt("You think carefully. You can crack an EGG to make it... You love to PLAY jokes... \nOooh, you can crack a CODE!")
+        printt("This is a tough one, but you choose")
+        #Raven's riddle
+        choices_2 = ["EGG", "JOKE", "CODE", "WAKE UP"]
         user_choice_2 = make_choice(choices_2).upper()
 
-        if user_choice_2 == "ECHO":
-            printt("#")
+        if user_choice_2 == "JOKE":
+            printt("'HAHA, correct!' squawks the Raven. 'I thought I had you. Well done, a deal is a deal.'")
+            printt("The Raven flapped it's wings and landed in the hedge next to you. 'A way out is that left there.")
+            printt("'I will warn you, there are pitfalls in that direction. The way out may not be offered to you")
+            printt("on a silver platter. Don't make the easy choice. In fact, I'll give you another right answer.'")
+            printt("'ANY time you can make a choice, you can make the choice to leave. All you have to do is--'")
+            printt("'BEGONE FOUL FOWL, you give too much!!' said a booming voice that seemed to resonate from everywhere.")
+            printt("The raven immediately snapped it's beak shut. 'Sorry friend, he's probably right. Good luck!'")
+            printt("And with that, the Raven abruptly flew away over the hedges. You think for a moment, and decide")
+            printt("to take the left. Still no other clues as to what goes where, might as well listen to the riddling bird.")
+            printt("The path starts winding again, but actually, it's getting brighter, and the fog is dissapating. And...")
+            printt("THERE! In the distance! You see what looks to be the end of the maze!")
+            printt("You sprint the rest of the way, grateful to be out of this dreary maze. You run onto what looks like ")
+            printt("a wooden platform, when suddenly everything is moving. As soon as both feet were on the wood, the ground")
+            printt("behind you fell away, and what appeared to be a distant mountain is now very much moving, and very much")
+            printt("right in front of you. First you recognize a gargantuan arm, an enormous shoulder, and last a VERY ugly face.")
+            printt("'WHO DARES DISTURB MY SUPPER!?!' He picks you up between two fingers and examines you. 'Bah, another wanderer'")
+            printt("For disturbing my supper, the least you can do for me is entertain me. Let's play a game.")
+            printt("The giant turned, and when he returned he was holding  3 cups")
+            printt("'Two of these cups contain poisons, and one is safe. Drink the safe cup, and I'll take you to fairy land.'")
+            printt("You look at the three cups, and nothing stands out. You see a BRASS GOBLET,\n a JEWELED CHALICE, and a plain wooden mug.")
 
             #Giants drink
             choices_3 = ["BRASS GOBLET", "JEWELED CHALICE", "WOODEN MUG", "WAKE UP", "ATTACK"]
             user_choice_3 == make_choice(choices_3).upper()
 
             if user_choice_3 == "BRASS GOBLET":
-                printt("#")
+                printt("With the giant looming over you, you step towards the brass goblet. \nIt's simple, but elegantly ornate, simple designs repeated in a fashion very ")
+                printt("pleasing to the eye. The liquid within doesn't \nbubble or ripple like the others. It's completly still, surface flat as a mirror.")
+                printt("The black liquid within could be distilled night, \ndistilled darkness. It's as dark and still as... on second thought, maybe it's better not to think to much about what it's like.")
+                printt("You grab the enourmous goblet in both hands, and awkwardly manage to tip it towards you.")
+                printt("It's viscous, like molasses. It slides towards \nyou, more than pours. You take a breath, and you slurp it up.")
+                printt("You do manage to spill more on yourself than drink, \nbut that,s fine, let's get this over with. You set the goblet down, and wait.")
+                printt("After a moment, your fingertips start tingling, Then \nthe sensation moves up your hands, your wrist. It's slightly painful, like pins and needles but so much worse.")
+                printt("Then the cold starts. Moving up from your feet, it spreads. \nYou realize you're stuck, literal frost showing all across your body.")
+                printt("You can't move. The giant roars with menacing laughter. Now you're encased in ice")
+                printt("a statue, a trophy for this cruel giant. You're panicking, \nbut even your thoughts are slow in this cold. You try to break free and")
                 main()
 
             elif user_choice_3 == "JEWELED CHALICE":
-                printt("#")
+                printt("You reach for the jeweled chalice, enchanted by its \nshimmering gems and intricate carvings.")
+                printt("As you lift it to your lips, the liquid inside sparkles like a \nthousand stars. It tastes sweet at first, a deceptive allure.")
+                printt("Suddenly, the jewels on the chalice start glowing brighter, and a \nsearing heat courses through your veins.")
+                printt("The sweetness turns to an unbearable burning sensation, and you collapse in agony.")
+                printt("The giant, pleased with your suffering, watches as your body ignites \nfrom the inside, your whole being fading into ashes until")
                 main()
             
             elif user_choice_3 == "WOODEN MUG":
-                printt("#")
+                printt("Opting for the humble wooden mug, you appreciate its simplicity \ncompared to the other extravagant vessels.")
+                printt("The liquid inside looks like a clear, refreshing water. As you\n take a cautious sip, a strange sensation creeps over you.")
+                printt("Your body begins to convulse uncontrollably, and you feel an intense pressure building within.")
+                printt("To your horror, small wooden tendrils sprout from your skin, intertwining with your muscles and bones.")
+                printt("You're transforming into a wooden statue, frozen in a grotesque pose. The giant, amused by the sight,")
+                printt("reaches over to pick you up and place you near his set of petrified victims. Just as his hand almost reaches you")
                 main()
 
             elif user_choice_3 == "ATTACK":
                 printt("#")
 
         
-        elif user_choice_2 == "WHISPER":
+        elif user_choice_2 == "EGG":
             printt("#")
 
             #trap room
@@ -305,7 +355,7 @@ def main():
                 printt("#")
                 main()
 
-        elif user_choice_2 == "SHADOW":
+        elif user_choice_2 == "CODE":
             printt("#")
 
             #forbidden fruit
