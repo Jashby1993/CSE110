@@ -12,7 +12,7 @@ def type_writer_effect(text, delay=0.035):
 def printt(*args):
     for arg in args:
         if isinstance(arg, str):
-            type_writer_effect(arg, delay=0.035)
+            type_writer_effect(arg, delay=0.02)
         else:
             print(arg, end='', flush=True)
     print()
@@ -23,14 +23,16 @@ def start_story():
     printt("You blink, and suddenly you're somewhere else. You don't remember how you got here. \nIt's cold, you can see your breath.")
     printt("It's dark and cloudy, no moon or stars in sight. Clouds above, and a fog rolling in, enveloping you.")
     printt("Confused, but with no other options, you walk forward. Up ahead, some distance away, you see the entrance to a hedge maze. ")
-    printt("As you enter the maze, you see a path to your LEFT, to your RIGHT, and STRAIGHT ahead.")
+    printt("As you enter the maze, you see a path to your LEFT, and to your RIGHT.")
     
 def make_choice(choices):
     while True:
         printt("What do you choose?  ")
         for choice in choices:
-            if choice == "AWAKE" or "ATTACK":
+            if choice == "WAKE UP" :
                 printt(f"- ")
+            elif choice == "ATTACK":
+                printt(f"-")
             else:
                 printt(f"- {choice}")
 
@@ -80,7 +82,7 @@ def main():
             printt("On your other side, you see a few scattered GOLD COINS amid the underbrush. Or maybe... do you just TALK to him?")
 
             #third choice
-            choices_3 = ["SWORD", "GOLD COINS", "TALK", "WAKE UP"]
+            choices_3 = ["SWORD", "GOLD COINS", "FLEE", "WAKE UP"]
             user_choice_3 = make_choice(choices_3).upper()
 
             #first troll choice
@@ -112,7 +114,7 @@ def main():
                 main()
 
             #3rd troll choice
-            elif user_choice_3 == "RUN AWAY":
+            elif user_choice_3 == "FLEE":
                 printt("You turn and sprint away from the troll as fast as your legs can carry you.")
                 printt("The troll roars in frustration behind you, but you don't look back.")
                 printt("As you race through the dense forest, you start to feel a strange tingling on the back of your neck.")
@@ -144,7 +146,7 @@ def main():
             printt("You approach slowly, and from the treeline, you encounter a bizarre sight. You find a primitive encampment full of\nthree foot tall...things. Green, large black eyes, pointed ears almost as long\nas they are tall. And all of them that you can see are armed.")
             printt("Most have clubs, but you see some with spears, and even a few with short blades, probably scavenged daggers.")
             printt("You don't really want to get involved, because they don't seem to like EACH OTHER, let alone an outsider.")
-            printt("You scan the area. It looks like you could SNEAK through the forest, staying within the treeline. Looking up,\nyou see a beehive. That looks like it could make a good distraction if you manage\nto knock it down.")
+            printt("You scan the area.  Looking up,you see a beehive. That looks like it could make a good distraction if you manage\nto knock it down.")
             printt("You also see what appears to be a pile of discarded weapons. You don't feel up to a fight, but if you grabbed some\nof those, looked big and made a lot of noise, you could INTIMIDATE them, they could back down.")
             printt("They're all little, right?")
 
@@ -166,37 +168,73 @@ def main():
                 main()
             
             elif user_choice_3 == "INTIMIDATE":
-                printt("#")
+                printt("Your hands close around a makeshift sword and a battered shield. Though your body protests every move, you muster the strength to \nstand, clutching the weapons. The goblins notice your emergence and cackle with glee, thinking they have an easy target.")
+                printt("Summoning the last reserves of your strength, you stride purposefully toward the goblin camp, your eyes fixed on the nearest one. With \na menacing scowl, you swing the makeshift sword through the air, the metallic hiss cutting through the night.")
+                printt("The goblins falter for a moment, their mirth turning to uncertainty. Taking advantage of their hesitation, you raise the battered shield high, \nits worn surface catching the flickering firelight. You growl, channeling every ounce of your determination into a fearsome glare.")
+                printt("'Back off!' you snarl, your voice echoing through the night. 'I may be injured, but I won't hesitate to take you down with me!'")
+                printt("The goblins exchange uneasy glances, their bravado wavering. Your desperate attempt at intimidation seems to be working. They inch backward, reassessing \nthe situation. With a final, authoritative swing of your makeshift weapon, you make a calculated step forward.")
+                printt("The goblins, now thoroughly intimidated, scatter into the shadows, leaving you with a path to pass through their camp unharmed. Though your body aches and \nprotests, you've successfully bluffed your way past the goblin threat. As you hobble away, the echoes of your fierce display linger in\n the night, and you press on, grateful for the discarded weapons that helped you overcome the odds.")
+                printt("You walk on through the forest, congratulatiosn in order. After how well that went, you confidence is definitely imrproving! You keep walking through the forest, and then")
+
                 main()
 
             
         elif user_choice_2 == "STAND YOUR GROUND":
-            printt("#")
+            printt("No where to run, no where to hide, and that gun isn't big enough for anything but making the bear")
+            printt("angrier. You do what they said on Discovery Channel: you raise your arms and spread your legs to make")
+            printt("yourself as large as possible, and you bellow and roar. Not to scare the bear exactly, but to make it seem you're")
+            printt("bigger. The bear stops and looks at you. Is it working? You can't believe your luck. The bear turns around, and with one")
+            printt("more look at you, he races away, obviously in a hurry. Was it you? Doesn't matter, you're not bear food.")
+            printt("That thought lasts exactly 5.4 seconds, and then the relief quickly dissipates when you hear a terrible sound")
+            printt("behind you. You can't believe your eyes. Flying towards you, like out of a movie, is a dragon. You start to")
+            printt("run, but it's so fast, and you're already tired from walking for hours in the maze. Faster than you imagined possible,")
+            printt("it's upon you, swooping down, and grasps you in it's claws, to take off again, vaulting back into the sky, off to some")
+            printt("unknown destination. It's enormous, how does this thing even manage to fly? It's covered in scales, in a multitude")
+            printt("of green and blue tones. It would be beautiful if you weren't hurtling hundreds of feet in the air against your will.")
+            printt("It's squeezing you in it's massive talons, making it hard to move, to breathe, to think. The world goes dark...")
+            printt("You wake up, which by itself is a relief. You look at your surroundings, you seem to be at the top of a mountain.")
+            printt("Is this it's nest, it's lair? You assess what's around you. Lot's of bones. Lot's of BURNT bones, to be specific.")
+            printt("Clearly this beast prefers to eat at home. Over to the right, you see a cave. Maybe a good place to HIDE until you can")
+            printt("sneak away? Nearby, you see a corpse. It's sword is melted, but the surprisingly ornate SHIELD seems untouched. Can that defend you?")
+            printt("On your other side, is a STAFF. It looks like little more than a carved walking stick, but you feel drawn towards it,")
+            printt("for reasons you can't understand. You hear something, but you can't identify where the sound comes from. Is the dragon ")
+            printt("on his way back? You need to choose soon.")
 
             #dragon choices
             choices_3 = ["HIDE", "STAFF", "SHEILD", "WAKE UP"]
             user_choice_3 = make_choice(choices_3).upper()
 
             if user_choice_3 =="HIDE":
-                printt("#")
+                printt("Safe bet, you decide to go hide in that cave. You look around, don't see anything trying to")
+                printt("eat you, and you head into the cave. A few steps in, your feet start sliding and clinking. You look down,")
+                printt("and you see you're literally walking on piles of gold coins, even jewels. This is his hoard, you think.")
+                printt("You barely have time to process that fact before you hear a low, rumbling growl. you turn, and the dragon is facing you,")
+                printt("mouth open. It breaths in, breathes out, you see the flames rumbling towards you and")
                 main()
 
             elif user_choice_3 == "STAFF":
-                printt("#")
+                printt("You decide to follow that feeling of calling. You go to the staff and pick it up. It begins to glow. You feel...")
+                printt("potential. You feel a potential energy you've never felt, something inside you waiting to be released.")
+                printt("You don't have time to think, because the dragon is returning. You heft the staff, and you look inside yourself")
+                printt("As the dragon flies above you, it sees you holding the staff and bellows in rage. It flies above you")
+                printt("and unleashes billows of flames upon you. You focus your energies on the staff, and the flames are")
+                printt("absorbed by the staff. You feel the energy flow into you, needing to be used. You let the energy rebound through")
+                printt("you, back through the staff, and you hurl the energy back at the creature, focusing on COLD. A burst of intense")
+                printt("cold catches the dragons wing and it comes tumbling to the ground. It clambers over to you, preparing it's flames. You hold the")
+                printt("staff high. The flames are racing towards you, you're pulling energy into and through the staff, and")
                 main()
 
             elif user_choice_3 == "SHEILD":
-                printt("#")
+                printt("You pull the corpse's arm from the sheild. Everything around it is burned, but the sheild is untouched.")
+                printt("There's obviously something special about the shield, but it's not a perfect defence. You strap it to your")
+                printt("arm, and just in time, because the dragon comes lumbering out of the cave you had thought about hiding in!")
+                printt("It spots you, and comes charging at you. It breathes in deep, and unleashes a torrent of flams at you. You duck behind")
+                printt("the shield, and though the flames should hurt, they don't. Irked, the dragon charges towards you. It prepares it's")
+                printt("fiery breath. You brace yourself behind your shield, awaiting the flames tht never come. The dragon has hooked")
+                printt("it's tail around you, flips you in the air towards open jaws, and")
                 main()
-            
-    elif user_choice_1 == 'STRAIGHT':
-        printt("#")
-
-        
-            
-    
-
-    elif user_choice_1 == "RIGHT":
+                       
+        elif user_choice_1 == "RIGHT":
         printt("No option seems better than another, so you stride towards the right. The path is twisting, convoluted,")
         printt("but there's no other fork, no other path presenting itself. For what seems like hours, you do nothing")
         printt("but follow the path. Just you, the endless hedges, and the fog. It gives you time to think. Where")
@@ -210,7 +248,7 @@ def main():
         printt("wrong answer. Agreed?")
         printt("You've always been good at riddles, so you agree eagerly.")
         printt("Very well, I love a good sport. Your riddle is this: I can be cracked, made, told, and played. What am I?")
-        printt("You think carefully. You can crack an EGG to make it... You love to PLAY jokes... \nOooh, you can crack a CODE!")
+        printt("You think carefully. You can crack an EGG to make it... You love to play a JOKE... \nOooh, you can crack a CODE!")
         printt("This is a tough one, but you choose")
         #Raven's riddle
         choices_2 = ["EGG", "JOKE", "CODE", "WAKE UP"]
@@ -240,7 +278,7 @@ def main():
 
             #Giants drink
             choices_3 = ["BRASS GOBLET", "JEWELED CHALICE", "WOODEN MUG", "WAKE UP", "ATTACK"]
-            user_choice_3 == make_choice(choices_3).upper()
+            user_choice_3 == make_choice(choices_3)
 
             if user_choice_3 == "BRASS GOBLET":
                 printt("With the giant looming over you, you step towards the brass goblet. \nIt's simple, but elegantly ornate, simple designs repeated in a fashion very ")
@@ -311,40 +349,69 @@ def main():
             printt("a deal is a deal.' The raven thinks for a moment, as if making a decision. 'The way you want to go, ")
             printt("is straight ahead.' That's the way you were going to pick anyways, excellent! 'Have fun' the raven")
             printt("cries, then flaps away without another word. You go straight ahead. As you walk, you think.")
-            printt("Eggs. I crack them. I make them. Wait, how do you tell an egg? Can you play an egg... Suddenly you ")
+            printt(f"{user_choice_2.capitalize()}s. I crack them. I make them. Wait, how do you tell the {user_choice_2.lower}? Can you play the {user_choice_2.lower()}... Suddenly you ")
             printt("about the raven's sincerity, which makes you feel a little crazy for having a conversation with an insincere")
-            printt("bird. ")
+            printt("bird. Before you can keep second guessing, you round a corner and abruptly hit a wall, with a large")
+            printt("wooden door in the middle. You test it, and it's not locked, so you go through. It's dark inside. You take")
+            printt("a few steps, and the door shuts abruptly, startling you. Suddenly, candles light and you can see your")
+            printt("surroundings. You're in a stone room with vaulted ceilings. To your right, you see a way out of the room")
+            printt("and back into the HEDGE MAZE. You take a shock as you look to your left, where stone platforms seem")
+            printt("suspended in middair! And straight ahead, you see a relatively normal looking corridor, except for the")
+            printt("suits of armor and bizzare statues that line both sides. Something feels...off about this place, menacing.")
+            printt("You also feel like you shouldn't stay here long. Where will you go?")
 
             #trap room
             choices_3 = ["HEDGE MAZE", "FLOATING PLATFORMS", "STATUES", "WAKE UP"]
-            user_choice_3 == make_choice(choices_3).upper()
+            user_choice_3 = make_choice(choices_3)
 
             if user_choice_3 == "HEDGE MAZE":
+                printt("You opt to go back into the hedge maze. You step through the archway and")
                 main()
 
             elif user_choice_3 == "FLOATING PLATFORMS":
-                printt("#")
+                printt("You take a left, going to inspect the floating platforms. You push on the first one with your foot,")
+                printt("and it doesn't budge. You ease your weight onto it, and it seems solid. You put your full weight onto it.")
+                printt("No movement, solid as a mountain. You jump up and down, solid. Ok, you think, I can do this. You stride along,")
+                printt("and then you look down. Immediate regret floods your mind, just as quick as the fear. Below you is nothing.")
+                printt("Nothing. Not a distant floor. Just nothing. You pick your eyes up and keep moving. You see another platform ahead,")
+                printt("separated by just a few inches. You test the platform, which is just a few inches narrower than the one you")
+                printt("find yourself on now. You test it, still pretty solid. You make the step with little issue. But as soon as")
+                printt("both feet are on the new platform, the previous platform evaporates. Not moves away, not descends, it simply PUFFS")
+                printt("into smoke. So much for solid. And as you walk, you realize this platform isn't perfectly stable as the last.")
+                printt("It has just a little give, like walking in an elevator. Can't jump back, it's too far. Nothing to do but move forward,")
+                printt("but you feel panic rising as you begin to understand just what's happening. As you test the third platform, you nearly")
+                printt("tumble off because the platform you're on evaporates when you put ONE foot on the next platform, and is smaller and")
+                printt("slightly less stable than the last. You start moving faster. You keep going, no end in sight. Nothing in sight, really.")
+                printt("No walls, no landmarks, just platforms and blackness. Each platform smaller and less stable than the last, and disappearing just")
+                printt("a little earlier than the last. You start running. There's no warning before a platform disappears, just gone.")
+                printt("Intuitively, you start jumping before you reach the end. The platforms aren't waiting for you to land, they disappear")
+                printt("as you jump. You're terrified now, trying to run faster and faster on platforms that are increasingly unstable.")
+                printt("And then the inevitable: you prepare yourself for the next jump, and your next step is through smoke and you find yourself")
+                printt("falling, tumbling through blackness. The fear is incredible as you just keep falling. Then you see a floor, cold stone")
+                printt("hurtling towards you. You brace for impact, and then")
                 main()
 
             elif user_choice_3 == "STATUES":
-                printt("#")
+                printt("Not trusting the impossible floating platforms, and reluctant to go through the maze again, you")
+                printt("just walk down the corridor. You look at the statues as you go. The suits of armor are all armed:")
+                printt("swords, lances, mauls, crossbows, sheilds, flails, pikes. The statues are all monstrous, cast in iron")
+                printt("or bronze, all depicting terrors of varying sizes, some ogre or troll looking ones, and some tiny ones,")
+                printt("no more than 8 inches with wings. The level of detail is incredible. you step forward to inspect one,")
+                printt("and it moves! It only looks at you, but you jump back in fright, inadvertantly bumping into an suit of armor")
+                printt("which, in turn, pushes you out of the way! It lifts a massive sword and cuts the gargoyle looking thing")
+                printt("that was looking at you in half, sending bronze chunks everywhere. You realize that EVERYTHING in the corridor is")
+                printt("starting to move. Nothing is paying attention to you though. The suits of armor taking their weapons and destroying")
+                printt("the waking monsters, and the monsters in turn are trying to dismantle the suits of armor. In moments, it's a full")
+                printt("battle ensuing in this large corridor. Suddenly, some of the monsters lock eyes on you and come running at you.")
+                printt("You dash the other way, but they're soon dispatched by suits of armor with massive battle axes. You're relieved,")
+                printt("but that's shortlived as the suits of armor who saved you now start swinging weapons at you! It's absolute")
+                printt("pandemonium. You just keep running, then you trip over a discarded gauntlet and crash to the ground.")
+                printt("You pick yourself up as quickly as you can, just in time to avoid a cyclop's club, you turn to run again, when")
+                printt("you see a suit of armor level a crossbow at you. You see a bolt hurtling right towards your chest, you feel")
+                printt("an impact, then pain and then")
                 main()
 
-        elif user_choice_2 == "CODE":
-            printt("#")
-
-            #forbidden fruit
-            choices_3 = ["PARTAKE", "FLEE", "WAKE UP"]
-            user_choice_3 == make_choice(choices_3).upper()
-
-            if user_choice_3 == "PARTAKE":
-                printt("#")
-                main()
-            
-            elif user_choice_3 == "FLEE":
-                printt("#")
-                main()
-
+        
 
 
     elif user_choice_1 or user_choice_2 or user_choice_3 == "WAKE UP":
