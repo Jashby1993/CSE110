@@ -3,7 +3,7 @@
 import time
 
 #typewriter effect?
-def type_writer_effect(text, delay=0.035):
+def type_writer_effect(text, delay=1):
     for char in text:
         print(char, end='', flush=True)
         time.sleep(delay)
@@ -12,7 +12,7 @@ def type_writer_effect(text, delay=0.035):
 def printt(*args):
     for arg in args:
         if isinstance(arg, str):
-            type_writer_effect(arg, delay=0.02)
+            type_writer_effect(arg, delay=0.035)
         else:
             print(arg, end='', flush=True)
     print()
@@ -234,7 +234,7 @@ def main():
                 printt("it's tail around you, flips you in the air towards open jaws, and")
                 main()
                        
-        elif user_choice_1 == "RIGHT":
+    elif user_choice_1 == "RIGHT":
         printt("No option seems better than another, so you stride towards the right. The path is twisting, convoluted,")
         printt("but there's no other fork, no other path presenting itself. For what seems like hours, you do nothing")
         printt("but follow the path. Just you, the endless hedges, and the fog. It gives you time to think. Where")
