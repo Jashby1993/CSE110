@@ -1,4 +1,4 @@
-#I started using just the while and for loops with lists, but then I started figuring out functions and it actually made it easier. I also have the program counting how many duplicate items you have. I also added options to keep adding or removing items from your cart.
+#I started using just the while and for loops with lists, but then I started figuring out functions and it actually made it easier. I also have the program counting how many duplicate items you have. I also added options to keep adding or removing items from your cart. I also made it so if you have multiple items and remove, it only removes one, and not all of the same item.
 
 actions = ["Add Item", "View Cart", "Remove Item", "Compute Total", "Quit"]
 items_in_cart = []
