@@ -34,8 +34,11 @@ def add_item():
             repeat = False
 
 def view_cart():
-    for i, item in enumerate(items_in_cart):
-        print(f"\n{i + 1}. {item['count']}: {item['name']} - ${(item['price'] * item['count']):.2f}\n")
+    if len(items_in_cart) != 0:
+        for i, item in enumerate(items_in_cart):
+            print(f"\n{i + 1}. {item['count']}: {item['name']} - ${(item['price'] * item['count']):.2f}\n")
+    else:
+        print("Your cart is currently empty.")
 
 def remove_item():
     repeat = True
@@ -44,10 +47,14 @@ def remove_item():
         view_cart()
         item_number = int(input("Which item NUMBER would you like to remove? "))
         if 1 <= item_number <= len(items_in_cart):
-            removed_item = items_in_cart.pop(item_number - 1)
-            print(f"Removed: {removed_item['name']} - ${removed_item['price']:.2f}")
-        else:
-            print("Invalid item number. Please choose a valid item number.")
+           if removed_item["count"] > 1:
+                # If count is greater than 1, decrement count
+                removed_item["count"] -= 1
+                print(f"Removed one {removed_item['name']}. {removed_item['name']} count: {removed_item['count']}")
+           else:
+                # If count is 1, remove the item from the list
+                removed_item = items_in_cart.pop(item_number - 1)
+                print(f"Removed: {removed_item['name']} - ${removed_item['price']:.2f}")
 
         repeat_ask = input("Would you like to remove something else from your cart? Y or N: ").capitalize()
         if repeat_ask != "Y":
